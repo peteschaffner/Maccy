@@ -16,7 +16,7 @@ class FilterMenuItemView: NSView, NSTextFieldDelegate {
   private var layoutConstraints: [String] {
     var constraints = ["V:|[queryField]-(==3)-|"]
     if UserDefaults.standard.hideTitle {
-      constraints.append("|-(==10)-[queryField]-(==10)-|")
+      constraints.append("|-(==4)-[queryField]-(==4)-|")
     } else {
       constraints.append("|-[titleField]-[queryField]-(==10)-|")
       constraints.append("V:|-(==3)-[titleField]-(==3)-|")
